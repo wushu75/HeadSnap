@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128">
+  <defs>
+    <linearGradient id="g128" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#007BFF"/>
+      <stop offset="50%" stop-color="#0099FF"/>
+      <stop offset="100%" stop-color="#00C6FF"/>
+    </linearGradient>
+    <filter id="s128" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#007BFF" flood-opacity="0.25"/>
+    </filter>
+    <linearGradient id="shine" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="white" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="white" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="128" height="128" rx="28" fill="url(#g128)" filter="url(#s128)"/>
+
+  <!-- Shine overlay -->
+  <path d="M0 0 L128 0 L128 50 Q64 80 0 50 Z" fill="url(#shine)"/>
+
+  <!-- Person silhouette -->
+  <circle cx="64" cy="48" r="22" fill="white"/>
+  <path d="M28 108c0-19.9 16.1-36 36-36s36 16.1 36 36" stroke="white" stroke-width="8" fill="none" stroke-linecap="round"/>
+
+  <!-- Sparkle accents -->
+  <g fill="#FFD700">
+    <circle cx="102" cy="26" r="5"/>
+    <circle cx="112" cy="38" r="3"/>
+    <circle cx="96" cy="18" r="2.5"/>
+  </g>
+
+  <!-- Camera ring suggestion -->
+  <circle cx="64" cy="48" r="28" stroke="white" stroke-width="2" fill="none" opacity="0.3"/>
+</svg>
